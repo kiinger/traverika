@@ -1,0 +1,23 @@
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: black;
+}
+
+.filter-bar button {
+  font-size: clamp(1.4rem, 2vw, 2rem) !important;
+}
+
+.filter-bar button.active {
+  background-color: white;
+}
+
+.filter-bar button:focus {
+  background-color: grey !important;
+  outline: none;
+}
+
+.filter-bar button {
+  border-radius: 0% !important;
+}

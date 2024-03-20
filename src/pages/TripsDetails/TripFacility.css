@@ -1,0 +1,13 @@
+.facility-list {
+  font-size: clamp(1.4em, 4vw, 2em);
+}
+
+.facility-list li::marker {
+  content: "☆";
+  color: rgb(82, 82, 42);
+}
+
+.facility-list li {
+  text-indent: 20px;
+  line-height: 1.6;
+}

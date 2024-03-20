@@ -1,0 +1,81 @@
+.section-tripsDetails {
+  height: 100%;
+  padding: 1.5rem;
+}
+.tripDetails {
+  max-width: 1600px;
+  margin-inline: auto;
+  min-height: 100%;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.158);
+  position: relative;
+}
+
+.tripDetails-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tripDetails .img-container img {
+  display: block;
+
+  width: 100%;
+}
+
+.tripDetails .img-container {
+  flex-basis: 600px;
+  flex-grow: 1;
+}
+
+.tripDetails nav {
+  background-color: black;
+}
+
+.tripDetails nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+}
+
+.tripDetails nav ul li {
+  font-size: clamp(1.3rem, 4vw, 2.2rem);
+  flex: 1;
+
+  text-align: center;
+}
+
+.tripDetails nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: all 0.1s ease-in-out;
+  padding: 0.3em 0.6em;
+}
+
+.tripDetails nav a:hover {
+  background-color: grey;
+}
+
+.tripDetails-description {
+  padding: 0.8em 0.6em;
+  flex-basis: 400px;
+  flex-grow: 3;
+}
+
+.tripDetails-description h2 {
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+  margin-block-end: 0.4em;
+}
+
+.button-back {
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  translate: 10px 10px;
+}
+
+.button-back:hover {
+  color: red;
+}

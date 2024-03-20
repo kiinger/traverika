@@ -1,0 +1,42 @@
+.trips-list ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-inline-start: 0px;
+}
+
+.trips-list .img-container img {
+  max-width: 100%;
+  aspect-ratio: 1/0.7;
+}
+
+.trips-list figure {
+  box-shadow: 0.2px 0.3px 1px rgba(0, 0, 0, 0.235);
+  height: 100%;
+  container-type: inline-size;
+  border-radius: 0.2em;
+}
+
+.trips-list figcaption h3 {
+  font-size: 11cqi;
+  text-align: center;
+}
+
+.trips-list figcaption p {
+  font-size: 6cqi;
+  text-align: center;
+}
+
+.trips-list figcaption {
+  padding: 0.2em 0.5em;
+}
+
+.trips-list a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease-in;
+}
+
+.trips-list:has(a:hover, a:focus) a:not(:hover, :focus) {
+  opacity: 0.6;
+}

@@ -1,0 +1,88 @@
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline;
+  max-width: 900px;
+  margin-inline: auto;
+  padding: 2em 5em;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.273);
+  gap: 1rem;
+  background-color: black;
+  color: white;
+  margin-top: 2rem;
+  border-radius: 0.3em;
+}
+
+.contact-form label:not(textarea) {
+  font-size: clamp(1.3rem, 2vw, 1.9rem);
+  display: flex;
+  gap: 0.4rem;
+}
+.contact-form :is(fieldset, textarea, input) {
+  font-size: clamp(1.3rem, 2vw, 1.9rem);
+}
+
+.contact-form label:has([name="comment"]) {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input[type="submit"] {
+  grid-column: 1/-1;
+  cursor: pointer;
+  border: none;
+  padding: 0.3em 0.6em;
+}
+
+.contact-form input:not([type="submit"], [type="radio"]) {
+  width: 100%;
+}
+
+.contact-form input[type="radio"] {
+  width: 0.8em;
+  accent-color: grey;
+}
+
+.contact-form textarea {
+  resize: none;
+  width: 100%;
+  aspect-ratio: 10/3;
+}
+.section-contact > h2 {
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  text-align: center;
+}
+
+.section-contact > p {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  text-align: center;
+}
+
+.section-contact {
+  padding: 0.6rem 1rem;
+}
+
+.contact-form :is(input, textarea) {
+  background-color: rgb(217, 217, 217);
+}
+
+.contact-form input[type="submit"] {
+  font-weight: 700;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: rgb(163, 163, 163);
+}
+
+.contact-form label:has(input:required)::before {
+  content: "*";
+  color: red;
+  margin-right: -4px;
+}
+
+.contact-form label:has(textarea:required) span::before {
+  content: "*";
+  color: red;
+  margin-right: -4px;
+}

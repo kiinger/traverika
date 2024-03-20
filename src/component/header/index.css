@@ -1,0 +1,47 @@
+.layout-header {
+  background-color: black;
+  display: flex;
+  padding: 0.2rem 0.5rem;
+}
+
+.layout-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.layout-header > .layout-nav {
+  flex: 1;
+}
+
+.layout-header > .layout-nav ul {
+  display: flex;
+  margin: 0;
+  justify-content: space-around;
+  list-style-type: none;
+  height: 100%;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.layout-header > .layout-nav li {
+  transition: box-shadow 0.2s ease-out;
+}
+
+.layout-header > .layout-nav li:hover {
+  box-shadow: 0px 2px 0 white;
+}
+
+.active {
+  box-shadow: 0px 2px 0 white;
+}
+
+.layout-header > .logo {
+  border-radius: 50%;
+  display: block;
+  margin-inline-start: 0.2rem;
+  height: 3rem;
+}
+
+body {
+  margin: 0;
+}

@@ -1,0 +1,53 @@
+.hero {
+  background-size: cover;
+  height: 70dvh;
+  position: relative;
+  padding: 0;
+}
+
+.hero-content {
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.187);
+  top: 0;
+  left: 0;
+}
+.hero-content h2 {
+  font-size: clamp(1.8rem, 5vw, 3.9rem);
+  letter-spacing: 0.2rem;
+}
+.hero-content p {
+  font-size: clamp(1.2rem, 3vw, 2.4rem);
+}
+.hero-btn {
+  margin-top: 0.6rem;
+  font-size: clamp(1.1rem, 3vw, 2rem);
+  background-color: rgb(83, 83, 83);
+  transition: all 0.1s ease-in;
+}
+.hero-btn:hover {
+  background-color: rgb(52, 52, 52);
+}
+.hero-video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.section-gallery {
+  padding: 3rem 2rem;
+}
+
+.section-gallery > h2 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  text-align: center;
+}

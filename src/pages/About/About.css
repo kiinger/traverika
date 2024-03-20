@@ -1,0 +1,14 @@
+.section-about {
+  padding: 1em 2em;
+}
+
+.section-about h2 {
+  text-align: center;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+}
+
+.section-about p {
+  line-height: 1.4;
+  font-size: clamp(1.2rem, 1vw, 1.4rem);
+  text-indent: 2ch;
+}

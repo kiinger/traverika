@@ -1,0 +1,24 @@
+.trips-section header :is(h2) {
+  text-align: center;
+  font-size: clamp(1.9rem, 4vw, 3.2rem);
+  margin-block-end: 0.3em;
+}
+
+.trips-section header > p {
+  font-size: clamp(1.2rem, 2vw, 1.7rem);
+  line-height: 1.4;
+}
+
+.trips-section {
+  padding: 2em 3em;
+
+  height: 100%;
+}
+
+.trips-section header {
+  margin-block-end: 1.9em;
+}
+
+.tripsList-layout {
+  max-height: 100%;
+}
